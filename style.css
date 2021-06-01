@@ -81,24 +81,9 @@ div[contenteditable=true] {
   cursor: text;
 }/*텍스트 블럭 안에 있는 글자 스타일*/
 
-/*텍스트 애니메이션
-@-webkit-keyframes blinker {
-  from {opacity: 1.0;}
-  to {opacity: 0.0;}
-}
-
-.keyword{
-\	text-decoration: blink;
-	-webkit-animation-name: blinker;
-	-webkit-animation-duration: 0.8s;
-	-webkit-animation-iteration-count:infinite;
-	-webkit-animation-timing-function:cubic-bezier(0.47, 0, 0.75, 0.72);
-	-webkit-animation-direction: alternate;
-}*/
-
 /*-------------------------------------right*/
 /* 전체 여백 */
-.content {
+.wrap {
   padding: 0vh 9.5vh 4vh;
 }
 
@@ -108,7 +93,7 @@ h1{
 
 /*-------------------------------------right a*/
 
-/*링크*/
+/*텍스트 링크*/
 a{
   color: black;
 }
@@ -119,26 +104,34 @@ a:hover{
 
 a:visited{
   color: black
-}
+}/*호버시 밑줄*/
 
-/*이미지 숨김*/
-a.photo img {
-  display: none
-}
-
-a.photo:hover img {
-  display: inline;
+/*이미지*/
+.photo img, .photo span{
+  display: none;
   position: fixed;
   width: 50vw;
-  left: 50%;
+}
+.photo img {
   top: 50%;
+  left: 50%;
   transform-origin: left top;
   transform: translate(-100%, -50%);
+} /*이미지*/
+
+.photo span{
+  height: 100vh;
+  left: 0%;
+  top: 0%;
   background-color:black;
-}
+} /*이미지 배경*/
+
+.photo:hover img, .photo:hover span{
+  display: inline-block;
+} /*이미지 호버시 보임*/
 
 /*-------------------------------------right tag*/
-span, .linktree a{
+.tag span, .linktree a{
   display: inline-block;
   padding: 0.3vw 1vw 0vw 1vw;
   font-size: 1.2vw;
@@ -148,7 +141,7 @@ span, .linktree a{
   border-radius: 100px;
 }
 
-span:hover, .linktree a:hover{
+.tag span:hover, .linktree a:hover{
   background: black;
   color: white;
 }
@@ -170,7 +163,7 @@ span:hover, .linktree a:hover{
     line-height: 2.9vw;
   }
 
-  .content {
+  .wrap {
     padding: 0vh 2vh 4vh;
   }
 
@@ -187,7 +180,7 @@ span:hover, .linktree a:hover{
     display: none;
   }
 
-  span, .linktree a{
+  .tag span, .linktree a{
     font-size: 2vw;
     line-height: 2vw;
     padding: 0.9vw 0.9vw 0.7vw 0.9vw;
@@ -223,9 +216,9 @@ span:hover, .linktree a:hover{
     transform: translate(0,0);
   }
 
-  span, .linktree a{
+  .tag span, .linktree a{
     display: inline-block;
-    padding: 2vw 3.5vw 1.5vw 3.5vw;
+    padding: 2vw 3.3vw 1.5vw 3.3vw;
     font-size: 36px;
     line-height: 36px;
     margin-top: 12.5px;
@@ -233,7 +226,7 @@ span:hover, .linktree a:hover{
     border-radius: 100px;
   }
 
-  .content {
+  .wrap {
     padding: 0vh 2vh 2vh;
   }
 
