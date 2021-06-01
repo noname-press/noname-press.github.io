@@ -64,8 +64,9 @@ div[contenteditable=true]:empty:not(:focus)::before{
   color:black;
 } /*텍스트 블럭 속성 포커스전*/
 
-/*div[contenteditable=true]:empty:focus::after{
+div[contenteditable=true]:empty:focus::after{
   content: attr(data-text);
+  display: inline-block;
   color:gray;
 } /*텍스트 블럭 속성 포커스*/
 
