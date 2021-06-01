@@ -14,7 +14,7 @@ body{
     font-size: 6.5vw;
     line-height: 6.5vw;
     text-align: center;
-    font-family: 'Work Sans';
+    font-family: 'Work Sans', 'Spoqa Han Sans Neo', sans-serif;
     font-weight: 600;
 		float: left;
     border-right: solid 2px black;
@@ -59,13 +59,13 @@ body{
 
 /*text block*/
 div[contenteditable=true]:empty:not(:focus)::before{
-  content: attr(placeholder);
+  content: attr(data-text);
   display: inline-block;
   color:black;
 } /*텍스트 블럭 속성 포커스전*/
 
 div[contenteditable=true]:empty:before{
-  content: attr(data-text);
+  content: attr(placeholder);
   display: inline-block;
   color: gray;/* For Firefox */
 } /*텍스트 블럭 속성*/
