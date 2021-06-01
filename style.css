@@ -211,8 +211,8 @@ span:hover, .linktree a:hover{
     position: static;
     width: 100%;
     height: auto;
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 38px;
+    line-height: 52px;
     letter-spacing: -0.5px;
     overflow-y: hidden;
     border-left: 0px;
@@ -234,7 +234,7 @@ span:hover, .linktree a:hover{
   }
 
   .content {
-    padding: 0vh 5vh 2vh;
+    padding: 0vh 2vh 2vh;
   }
 
   #topBtn{
