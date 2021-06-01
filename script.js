@@ -1,7 +1,24 @@
+//pabicon
+var gifcon = new Array();
+    gifcon[gifcon.length]='./img/Frame0.png';
+    gifcon[gifcon.length]='./img/Frame1.png';
+
+var gifico = setInterval(function(){
+    tw = $('link[rel="icon"]');
+    n=gifcon.indexOf(tw.attr('href'));
+    if(0<=n && n*1+1<gifcon.length){
+        tw.attr('href',gifcon[n*1+1]);
+    }else{
+        tw.attr('href',gifcon[0]);
+    }
+} , 250);
+
+//img
 $( document ).ready( function() {
     $( 'img' ).wrap( $( '<span class="black-box"></span>' ));
 }); // 이미지 뒤에 검은색 배경추가 코드. 전체 img를 선택해서 span 태그로 감싼다.
 
+//keyword
 $(document).ready(function() {
 	$("#keyword1").show();
 	$("#keyword2").hide();
