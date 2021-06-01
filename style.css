@@ -16,8 +16,13 @@ body{
     text-align: center;
     font-family: 'Work Sans', 'Spoqa Han Sans Neo', sans-serif;
     font-weight: 600;
-		float: left;
+    float: left;
     border-right: solid 2px black;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .right{
@@ -73,8 +78,12 @@ div[contenteditable=true] {
   color: black;
   display: inline-block;
   cursor: text;
-  -webkit-user-select: text;
-  user-select: text;
+  -ms-user-select: text;
+  -moz-user-select: -moz-text;
+  -khtml-user-select: text;
+  -webkit-user-select: auto;
+  user-select:  text;
+	
 }/*텍스트 블럭 안에 있는 글자 스타일*/
 
 /*텍스트 애니메이션
