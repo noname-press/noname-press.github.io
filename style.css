@@ -16,8 +16,9 @@ body{
     text-align: center;
     font-family: 'Work Sans', 'Spoqa Han Sans Neo', sans-serif;
     font-weight: 600;
-    float: left;
+		float: left;
     border-right: solid 2px black;
+    /*stop dragging*/
     -ms-user-select: none;
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
@@ -58,13 +59,13 @@ body{
 
 /*text block*/
 div[contenteditable=true]:empty:not(:focus)::before{
-  content: attr(data-text);
+  content: attr(placeholder);
   display: inline-block;
   color:black;
-} /*텍스트 블럭 속성 포커스전*/
+} /*텍스트 블럭 속성 포커스 전*/
 
 div[contenteditable=true]:empty:before{
-  content: attr(placeholder);
+  content: attr(data-text);
   display: inline-block;
   color: gray;/* For Firefox */
 } /*텍스트 블럭 속성*/
@@ -75,15 +76,9 @@ div[contenteditable=true] {
   margin: 0;
   padding: 0;
   outline: none;
-  color: black;
   display: inline-block;
+  color: black;
   cursor: text;
-  -ms-user-select: text;
-  -moz-user-select: -moz-text;
-  -khtml-user-select: text;
-  -webkit-user-select: auto;
-  user-select:  text;
-	
 }/*텍스트 블럭 안에 있는 글자 스타일*/
 
 /*텍스트 애니메이션
