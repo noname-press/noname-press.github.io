@@ -124,6 +124,14 @@ a:hover, a:active{
   display: inline-block;
 } /*이미지 호버시 보임*/
 
+a.background .blue{
+  background-color:#090bd6;
+}
+
+a.background .white{
+  background-color:#ffffff;
+}
+
 /*-------------------------------------right tag*/
 .tag a, .linktree a{
   display: inline-block;
