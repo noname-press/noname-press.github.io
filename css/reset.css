@@ -54,11 +54,11 @@ a {
 /*font-face*/
 @font-face {
     font-family: 'ABCFavorit';
-    src: url('font/ABCFavorit-Book.eot');
-    src: url('font/ABCFavorit-Book.eot?#iefix') format('embedded-opentype'),
-        url('font/ABCFavorit-Book.woff2') format('woff2'),
-        url('font/ABCFavorit-Book.woff') format('woff'),
-        url('font/ABCFavorit-Book.ttf') format('truetype');
+    src: url('../font/ABCFavorit-Book.eot');
+    src: url('../font/ABCFavorit-Book.eot?#iefix') format('embedded-opentype'),
+        url('../font/ABCFavorit-Book.woff2') format('woff2'),
+        url('../font/ABCFavorit-Book.woff') format('woff'),
+        url('../font/ABCFavorit-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
