@@ -42,7 +42,7 @@ body{
 /*-------------------------------------right*/
 /* 전체 여백 */
 .wrap {
-  padding: 0vh 12.5vh 4vh;
+  padding: 0vh 15.5vh 8vh;
 }
 
 h1{
@@ -125,7 +125,7 @@ a:hover, a:active{
 } /*이미지 호버시 보임*/
 
 /*-------------------------------------right tag*/
-.tag span, .linktree a{
+.tag a, .linktree a{
   display: inline-block;
   padding: 0.3vw 1vw 0vw 1vw;
   font-size: 1.1vw;
@@ -135,7 +135,7 @@ a:hover, a:active{
   border-radius: 100px;
 }
 
-.tag span:hover, .linktree a:hover{
+.tag a:hover, .linktree a:hover{
   background: black;
   color: white;
 }
@@ -169,7 +169,7 @@ a:hover, a:active{
   }
 
   .wrap {
-    padding: 0vh 2vh 4vh;
+    padding: 0vh 2vh 6vh;
   }
 
   /* link */
@@ -185,7 +185,7 @@ a:hover, a:active{
     display: none;
   }
 
-  .tag span, .linktree a{
+  .tag a, .linktree a{
     font-size: 2vw;
     line-height: 2vw;
     padding: 0.9vw 0.9vw 0.7vw 0.9vw;
@@ -221,7 +221,7 @@ a:hover, a:active{
     transform: translate(0,0);
   }
 
-  .tag span, .linktree a{
+  .tag a, .linktree a{
     display: inline-block;
     padding: 2vw 3.3vw 1.5vw 3.3vw;
     font-size: 36px;
