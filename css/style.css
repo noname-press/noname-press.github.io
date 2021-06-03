@@ -117,6 +117,7 @@ a:hover, a:active{
   left: 0%;
   top: 0%;
   background-color:black;
+  overflow: hidden;
 } /*이미지 배경*/
 
 .photo:hover img, .photo:hover span{
