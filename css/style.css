@@ -120,7 +120,7 @@ a:hover, a:active{
   overflow: hidden;
 } /*이미지 배경*/
 
-.photo img:hover, .photo span:hover{
+.photo:hover img, .photo:hover span{
   display: inline-block;
 } /*이미지 호버시 보임*/
 
