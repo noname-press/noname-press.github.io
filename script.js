@@ -17,7 +17,7 @@ var gifico = setInterval(function(){
 $( document ).ready( function() {
     $( 'img' ).not( 'a.background img' ).wrap( $( '<span></span>' ));// 이미지 뒤에 검은색 배경추가 코드. 전체 img를 선택해서 span 태그로 감싼다.
     $( '.content a, .tag a' ).addClass('photo');
-    $('.content a, .tag a').attr('onclick','');
+    $('.content a, .tag a').attr('onclick','""');
     //a에 클래스 추가
 });
 
